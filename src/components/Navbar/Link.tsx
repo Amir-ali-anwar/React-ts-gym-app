@@ -1,9 +1,15 @@
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-type Props = {}
+type Props = {
+    page:string
+}
 
-const Link = (props: Props) => {
+const Link = ({page}: Props) => {
   return (
-    <div>Link</div>
+    <AnchorLink>
+        {page}
+
+    </AnchorLink>
   )
 }
+export default Link
