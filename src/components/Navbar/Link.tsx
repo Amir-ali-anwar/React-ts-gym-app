@@ -5,11 +5,7 @@ type Props = {
 }
 
 const Link = ({page}: Props) => {
-  return (
-    <AnchorLink>
-        {page}
-
-    </AnchorLink>
-  )
+  const toloweCase = page.toLowerCase().replace(/ /g, "");  
+  return <AnchorLink href={`#${toloweCase}`} >{page}</AnchorLink>;
 }
 export default Link
