@@ -6,7 +6,7 @@ type Props = {
   setSelectedPage: (value: string) => void;
 };
 
-const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
+const Link = ({page, selectedPage, setSelectedPage }: Props) => {
   const tolowerCase = page.toLowerCase().replace(/ /g, "");
   return (
     <AnchorLink
