@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import Navbar from "@/components/Navbar";
   
 function App() {
-  return <div className="App gray-50 secondary-500">asdasd</div>;
+  return <div className="App gray-50 secondary-500">
+    <Navbar /> 
+  </div>;
 }
 
 export default App
