@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Home from "./components/Home";
 import { useState, useEffect } from "react";
 import { SelectedPage } from "@/shared/types";
 
@@ -22,6 +23,7 @@ function App() {
   return (
     <div className="App gray-50 secondary-500">
       <Navbar setSelectedPage={setSelectedPage} selectedPage={selectedPage} TopScroll={TopScroll} />
+      <Home setSelectedPage={setSelectedPage} />
     </div>
   );
 }
