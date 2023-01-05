@@ -1,8 +1,9 @@
 import Navbar from "@/components/Navbar";
-import Home from "./components/Home";
+import Home from "@/components/Home";
+import Benefits from "@/components/Benefits/";
 import { useState, useEffect } from "react";
 import { SelectedPage } from "@/shared/types";
-
+import OurClasses from "@/components/ourClasses";
 function App() {
   const [selectedPage, setSelectedPage] = useState<string>(SelectedPage.Home);
   const [TopScroll, SetTopScroll] = useState<boolean>(true);
@@ -24,6 +25,8 @@ function App() {
     <div className="App gray-50 secondary-500">
       <Navbar setSelectedPage={setSelectedPage} selectedPage={selectedPage} TopScroll={TopScroll} />
       <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage} />
     </div>
   );
 }
